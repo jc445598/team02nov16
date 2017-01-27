@@ -1,0 +1,163 @@
+body {
+
+	background-color:#f1f1f1;
+	font-family:arial;
+}
+
+.container {
+	
+	margin:auto;
+	padding:10px;
+	width:100%;
+	border:px solid lightgrey;
+	box-shadow: px px px px ;
+	
+	max-width: 1220px;
+	margin: 0 auto;
+}
+
+#header {
+	font-size:20px;
+	text-align:left;
+	margin:auto;
+	padding:10px;
+	color:white;
+	background-color:#ff6600;
+}
+
+#nav {
+	background-color:black;
+	/*height:40px;*/
+}
+
+#nav ul {
+	
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
+}
+
+#nav ul li {
+	float:left;
+	
+}
+
+#nav ul li a {
+	display:block;
+	color:white;
+	padding:12px 45px;
+	text-decoration:none;
+}	
+
+#nav ul li a:hover {
+	background-color:#800000;
+	color:white;
+}
+
+#content {
+	margin:auto;
+	padding:8px;
+	background-color:white;
+	float:left;
+	width:auto;
+	height:auto;
+}
+#imageslider {
+	clear:both;
+	margin:auto;
+	padding:8px;
+	background-color:#f6f6f6;
+        border: px solid green;
+	border-radius:10px;
+	float:center;
+	width:90%;
+	height:auto;
+}
+
+#newsletter {
+	float:center;
+	margin:auto;
+	padding:8px;
+	width:90%;
+	height:auto;
+	background-color:#f9f9f9;
+   	border: 0px dotted black;
+	border-radius:10px;
+} 
+
+#socialevent {
+	margin:auto;
+	clear:both;
+	float:center;
+ 	padding:8px;
+	width:90%;
+	height:auto;
+	background-color:#f9f9f9;
+	border: 1px solid green;
+	border-radius:10px;
+	border-radius:10px;
+}
+
+#socialevent ul li {
+	float:left;
+	
+	
+}
+
+#socialevent ul li a {
+	display:inline;
+	color:white;
+	padding:0px 0px;
+	text-decoration:none;
+	font-size:15px;
+}	
+
+#socialevent ul li a:hover {
+	background-color:red;
+	color:white;
+}
+
+/*#empty {
+	float:center;
+	width:auto;
+	height:20px;
+	background-color:#00cc00;	
+} */
+
+#upcomingactivities {
+	margin:auto;
+	clear:both;
+	float:center;
+ 	padding:8px;
+	width:90%;
+	height:auto;
+	background-color:#f9f9f9;
+	border: px solid red;
+	border-radius:10px;
+}
+
+#footer {
+	clear:both;
+	border:1px solid grey;
+	clear:left;
+	color:white;
+	background-color:#cc3300;
+	padding:15px;
+	text-align:left;
+}
+#footer ul {
+float:center;
+
+}
+#footer ul li{  }
+#footer ul li a{ }
+
+#footer img {
+    opacity: 0.5;
+    
+}
+
+#footer img:hover {
+    opacity: 1.0;
+}

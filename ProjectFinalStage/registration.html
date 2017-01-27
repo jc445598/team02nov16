@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="signup.css">	
+<script>
+function checkRePassword(document) {	
+	  var pwd = document.getElementById("password");
+  	  var pwd_msg = document.getElementById('pwd_msg');
+	  var repwd = document.getElementById("rePassword");	  
+	  if (pwd.value != repwd.value) {
+		pwd_msg.innerHTML = "The two passwords are not the same. Please re-enter both now";
+		repwd.value = "";
+		pwd.focus();
+		return false;
+	  }
+	  else {
+		pwd_msg.innerHTML = "";  
+	  }  
+	  return true;
+	}	
+
+	function validateInfo(document) { 
+	  if (checkRePassword(document))
+	  { 
+		return true;
+	  }
+	  return false;
+	}
+	
+	</script>
+</head>
+
+<body>
+     
+	<div class="container">
+ 				<div id="header"><img src="logo1.png.png"  alt=" " style="border-radius:10px; height:70px; width:120px; margin-left:10px; margin-top:2px;float:left;" />
+              
+	
+				<h3 align="center">Sign Up Page</h3></div>
+				
+					
+	<div id="nav">
+		<ul>
+			
+			<li><a href="http://10.250.0.9/team02nov16/index.html" style="margin-left:20px;">Home</a></li>
+			<li><a href="http://10.250.0.9/team02nov16/registration.html">Support</a></li>
+			<li><a href="http://10.250.0.9/team02nov16/AboutUs.html">About Us</a></li>
+            	<li><a href="http://10.250.0.9/team02nov16/login.php">Login</a></li>
+			<li><a href="http://10.250.0.9/team02nov16/ContactUs.html">Contact Us</a></li>
+		</ul>
+	</div>
+					<div id="content">
+						<form action="registration_process.php" method="post">
+ <table border="0">
+	<tr>
+    	<td align="right">* Name:</td>
+    	<td><input type="text" id="name" name="name" required></td>
+	</tr>
+	<tr>
+    	<td align="right">* Email:</td>
+    	<td><input type="email" name="email" id="email" required></td>
+	</tr>
+	<tr>
+    	<td align="right">* Password:</td>
+    	<td><input type="password" id="password" name="password" required></td>
+        <td id="pwd_msg" style="color:red;"></td>
+	</tr>
+	<tr>
+    	<td align="right">* Re-try:</td>
+    	<td><input type="Password" id="rePassword" name="rePassword" onChange="checkRePassword(document)"></td>
+	</tr>
+	<tr>
+    	<td align="right"><input type="submit" name="submit" value="Submit" onClick="return validateInfo(document)"></td>
+    	<td><input type="reset" name="reset" value="Clear"></td>
+	</tr>
+  </table> 
+</form>
+					</div>
+       <div id="footer">
+		Copyright &copy 2016-17 @MAKE A FUTURE FOUNDATION	</div>
+
+
+	
+	</div>
+
+</body>
+</html>
